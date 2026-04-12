@@ -1,0 +1,120 @@
+{
+  "income": [
+    {
+      "amount": "35.60",
+      "source": "Efood",
+      "description": "Today's revenue",
+      "hours": "4.28",
+      "date": "2026-04-03",
+      "id": 1775694168848,
+      "orders": "9"
+    },
+    {
+      "amount": "108.19",
+      "source": "Efood",
+      "description": "Today's revenue",
+      "hours": "12.55",
+      "date": "2026-04-04",
+      "id": 1775694257748,
+      "orders": "28"
+    },
+    {
+      "amount": "123.38",
+      "source": "Efood",
+      "description": "Today's revenue",
+      "hours": "10.52",
+      "date": "2026-04-05",
+      "id": 1775694300524,
+      "orders": "26"
+    },
+    {
+      "amount": "76.21",
+      "source": "Efood",
+      "description": "Today's revenue",
+      "hours": "10.22",
+      "date": "2026-04-06",
+      "id": 1775694344631,
+      "orders": "24"
+    },
+    {
+      "amount": "84.52",
+      "source": "Efood",
+      "description": "Today's revenue",
+      "hours": "9.56",
+      "date": "2026-04-07",
+      "id": 1775694382346,
+      "orders": "28"
+    },
+    {
+      "amount": "62.86",
+      "source": "Efood",
+      "description": "Today's revenue",
+      "hours": "8.27",
+      "date": "2026-04-08",
+      "id": 1775694419297,
+      "orders": "22"
+    },
+    {
+      "amount": "78.19",
+      "source": "Efood",
+      "description": "Today's revenue",
+      "hours": "7.13",
+      "orders": "25",
+      "cancelledOrders": "",
+      "date": "2026-04-09",
+      "id": 1775779787312
+    },
+    {
+      "amount": "86.72",
+      "source": "Efoof",
+      "description": "Today's revenue",
+      "hours": "8.32",
+      "orders": "25",
+      "cancelledOrders": "",
+      "date": "2026-04-10",
+      "id": 1775812149782
+    },
+    {
+      "amount": "77.60",
+      "source": "Efood",
+      "description": "",
+      "hours": "7.25",
+      "orders": "21",
+      "cancelledOrders": "",
+      "date": "2026-04-11",
+      "id": 1775954759442
+    },
+    {
+      "amount": "57.93",
+      "source": "Efood",
+      "description": "",
+      "hours": "3.57",
+      "orders": "9",
+      "cancelledOrders": "1",
+      "date": "2026-04-12",
+      "id": 1775995551779
+    }
+  ],
+  "expenses": [],
+  "tasks": [],
+  "debts": [
+    {
+      "personName": "ابو الحج",
+      "amount": "200",
+      "type": "owed",
+      "description": "اجار السكن",
+      "date": "2026-04-10",
+      "settled": false,
+      "id": 1775859884583
+    }
+  ],
+  "settings": {
+    "currency": "EUR",
+    "language": "ar",
+    "commissionRate": 30,
+    "darkMode": true,
+    "id": "main",
+    "telegramBotToken": "AAFoysq9MeChgp0IW9nCmb2kt8s_r2x4dnA",
+    "telegramChatId": "8588790207"
+  }
+}
