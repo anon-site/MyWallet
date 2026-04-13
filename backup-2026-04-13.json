@@ -85,14 +85,24 @@
       "id": 1775954759442
     },
     {
-      "amount": "57.93",
+      "amount": "135.74",
       "source": "Efood",
       "description": "",
-      "hours": "3.57",
-      "orders": "9",
-      "cancelledOrders": "1",
+      "hours": "9.22",
+      "orders": "23",
+      "cancelledOrders": "4",
       "date": "2026-04-12",
       "id": 1775995551779
+    },
+    {
+      "amount": "100.91",
+      "source": "Efood",
+      "description": "",
+      "hours": "11.39",
+      "orders": "28",
+      "cancelledOrders": "",
+      "date": "2026-04-13",
+      "id": 1776040449911
     }
   ],
   "expenses": [],
@@ -106,6 +116,15 @@
       "date": "2026-04-10",
       "settled": false,
       "id": 1775859884583
+    },
+    {
+      "personName": "Efoof",
+      "amount": "66",
+      "type": "owed",
+      "description": "",
+      "date": "2026-04-12",
+      "settled": false,
+      "id": 1775999527013
     }
   ],
   "settings": {

@@ -399,6 +399,14 @@ const t = (lang, key) => {
   return value || key;
 };
 
+// Helper function to get English day name from date string
+const getEnglishDayName = (dateString) => {
+  if (!dateString) return '';
+  const date = new Date(dateString);
+  const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+  return days[date.getDay()];
+};
+
 // Currency symbols
 const currencySymbols = {
     'SAR': 'SAR',
@@ -1851,7 +1859,9 @@ function IncomePage({ income, setIncome, currencySymbol, settings, currentLang, 
                                         React.createElement('span', { className: 'source-label dark:bg-violet-900/30 dark:text-violet-300' }, item.source),
                                         React.createElement('span', { className: 'date-badge dark:bg-slate-700 dark:text-slate-300' }, 
                                             React.createElement(Icons.Calendar, { className: 'w-3 h-3 inline ml-1' }),
-                                            ' ', item.date
+                                            ' ', item.date,
+                                            ' - ',
+                                            React.createElement('span', { className: 'en-font' }, getEnglishDayName(item.date))
                                         )
                                     ),
                                     // Description
