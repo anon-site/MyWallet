@@ -153,7 +153,28 @@ const translations = {
     languages: {
       ar: 'العربية',
       en: 'English'
-    }
+    },
+    loginTitle: 'تسجيل الدخول',
+    loginSubtitle: 'أدخل كلمة المرور للوصول إلى محفظتك',
+    passwordLabel: 'كلمة المرور',
+    loginButton: 'دخول',
+    loginError: 'كلمة المرور غير صحيحة',
+    splashTitle: 'مرحباً بك في محفظتي',
+    splashSubtitle: 'نظام إدارة مالي ذكي',
+    logoutButton: 'تسجيل الخروج',
+    logoutConfirm: 'هل أنت متأكد من تسجيل الخروج؟',
+    passwordSettings: 'إعدادات كلمة المرور',
+    currentPassword: 'كلمة المرور الحالية',
+    newPassword: 'كلمة المرور الجديدة',
+    confirmPassword: 'تأكيد كلمة المرور',
+    changePassword: 'تغيير كلمة المرور',
+    passwordChanged: 'تم تغيير كلمة المرور بنجاح',
+    passwordMismatch: 'كلمات المرور غير متطابقة',
+    passwordRequired: 'كلمة المرور مطلوبة',
+    rememberPassword: 'تذكر كلمة المرور',
+    autoLogin: 'دخول تلقائي',
+    showPassword: 'إظهار كلمة المرور',
+    hidePassword: 'إخفاء كلمة المرور'
   },
   
   en: {
@@ -307,7 +328,28 @@ const translations = {
     languages: {
       ar: 'العربية',
       en: 'English'
-    }
+    },
+    loginTitle: 'Login',
+    loginSubtitle: 'Enter your password to access your wallet',
+    passwordLabel: 'Password',
+    loginButton: 'Login',
+    loginError: 'Incorrect password',
+    splashTitle: 'Welcome to My Wallet',
+    splashSubtitle: 'Smart Financial Management System',
+    logoutButton: 'Logout',
+    logoutConfirm: 'Are you sure you want to logout?',
+    passwordSettings: 'Password Settings',
+    currentPassword: 'Current Password',
+    newPassword: 'New Password',
+    confirmPassword: 'Confirm Password',
+    changePassword: 'Change Password',
+    passwordChanged: 'Password changed successfully',
+    passwordMismatch: 'Passwords do not match',
+    passwordRequired: 'Password is required',
+    rememberPassword: 'Remember password',
+    autoLogin: 'Auto login',
+    showPassword: 'Show password',
+    hidePassword: 'Hide password'
   }
 };
 
@@ -342,6 +384,25 @@ const Icons = {
     Settings: (props = {}) => React.createElement('svg', { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", ...props },
         React.createElement('path', { d: "M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.1a2 2 0 0 1-1-1.72v-.51a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z" }),
         React.createElement('circle', { cx: "12", cy: "12", r: "3" })
+    ),
+    Lock: (props = {}) => React.createElement('svg', { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", ...props },
+        React.createElement('rect', { width: "18", height: "11", x: "3", y: "11", rx: "2", ry: "2" }),
+        React.createElement('path', { d: "M7 11V7a5 5 0 0 1 10 0v4" })
+    ),
+    LogOut: (props = {}) => React.createElement('svg', { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", ...props },
+        React.createElement('path', { d: "M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" }),
+        React.createElement('polyline', { points: "16 17 21 12 16 7" }),
+        React.createElement('line', { x1: "21", x2: "9", y1: "12", y2: "12" })
+    ),
+    Eye: (props = {}) => React.createElement('svg', { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", ...props },
+        React.createElement('path', { d: "M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z" }),
+        React.createElement('circle', { cx: "12", cy: "12", r: "3" })
+    ),
+    EyeOff: (props = {}) => React.createElement('svg', { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", ...props },
+        React.createElement('path', { d: "M9.88 9.88a3 3 0 1 0 4.24 4.24" }),
+        React.createElement('path', { d: "M10.73 5.08A10.43 10.43 0 0 1 12 5c7 0 10 7 10 7a13.16 13.16 0 0 1-1.67 2.68" }),
+        React.createElement('path', { d: "M6.61 6.61A13.526 13.526 0 0 0 2 12s3 7 10 7a9.74 9.74 0 0 0 5.39-1.61" }),
+        React.createElement('line', { x1: "2", x2: "22", y1: "2", y2: "22" })
     ),
     Plus: (props = {}) => React.createElement('svg', { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", ...props },
         React.createElement('path', { d: "M12 5v14" }),
@@ -816,6 +877,360 @@ function DateRangeFilter({ startDate, endDate, onStartChange, onEndChange, curre
     );
 }
 
+// Login Component
+function Login({ onLogin, currentLang, t, storedPassword, onRememberChange, onAutoLoginChange, rememberPassword, autoLogin }) {
+    const [password, setPassword] = React.useState('');
+    const [error, setError] = React.useState('');
+    const [isLoading, setIsLoading] = React.useState(false);
+    const [showPassword, setShowPassword] = React.useState(false);
+    const [remember, setRemember] = React.useState(rememberPassword || false);
+    const [autoLoginState, setAutoLoginState] = React.useState(autoLogin || false);
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        setIsLoading(true);
+        setError('');
+
+        // Simulate loading for better UX
+        setTimeout(() => {
+            const correctPassword = storedPassword || 'anon';
+            if (password === correctPassword) {
+                // Save remember and auto login settings
+                onRememberChange(remember);
+                onAutoLoginChange(autoLoginState);
+                // Save password to localStorage if remember is enabled
+                if (remember) {
+                    localStorage.setItem('rememberedPassword', password);
+                } else {
+                    localStorage.removeItem('rememberedPassword');
+                }
+                onLogin();
+            } else {
+                setError(t(currentLang, 'loginError'));
+                setIsLoading(false);
+            }
+        }, 500);
+    };
+
+    const togglePasswordVisibility = () => {
+        setShowPassword(!showPassword);
+    };
+
+    return React.createElement('div', {
+        className: 'min-h-screen bg-gradient-to-br from-violet-600 via-purple-600 to-indigo-700 flex items-center justify-center p-4'
+    },
+        React.createElement('div', { className: 'absolute inset-0 overflow-hidden' },
+            // Animated background elements
+            React.createElement('div', {
+                className: 'absolute -top-40 -right-40 w-80 h-80 bg-purple-500 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-float'
+            }),
+            React.createElement('div', {
+                className: 'absolute -bottom-40 -left-40 w-80 h-80 bg-indigo-500 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-float',
+                style: { animationDelay: '1s' }
+            }),
+            React.createElement('div', {
+                className: 'absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-violet-500 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-float',
+                style: { animationDelay: '2s' }
+            })
+        ),
+        React.createElement('div', {
+            className: 'relative bg-white/95 dark:bg-slate-900/95 backdrop-blur-xl rounded-3xl shadow-2xl p-8 md:p-12 w-full max-w-md animate-scale-in border border-white/20'
+        },
+            // Logo
+            React.createElement('div', { className: 'text-center mb-8' },
+                React.createElement('div', {
+                    className: 'w-20 h-20 mx-auto mb-4 bg-gradient-to-br from-violet-500 to-indigo-600 rounded-2xl flex items-center justify-center shadow-lg animate-float'
+                },
+                    React.createElement(Icons.Wallet, { className: 'w-10 h-10 text-white' })
+                ),
+                React.createElement('h1', {
+                    className: 'text-3xl font-bold text-gray-800 dark:text-white mb-2'
+                }, t(currentLang, 'appName')),
+                React.createElement('p', {
+                    className: 'text-gray-600 dark:text-gray-400'
+                }, t(currentLang, 'loginSubtitle'))
+            ),
+            // Form
+            React.createElement('form', { onSubmit: handleSubmit },
+                React.createElement('div', { className: 'mb-6' },
+                    React.createElement('label', {
+                        className: 'block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-3'
+                    }, t(currentLang, 'passwordLabel')),
+                    React.createElement('div', { className: 'relative' },
+                        React.createElement('input', {
+                            type: showPassword ? 'text' : 'password',
+                            value: password,
+                            onChange: (e) => setPassword(e.target.value),
+                            placeholder: '••••••••',
+                            className: 'w-full px-5 py-4 pr-24 rounded-xl border-2 border-gray-200 dark:border-slate-600 bg-white dark:bg-slate-800 text-gray-800 dark:text-white text-lg focus:outline-none focus:border-violet-500 focus:ring-4 focus:ring-violet-500/20 transition-all duration-300',
+                            autoFocus: true
+                        }),
+                        React.createElement('div', { className: 'absolute right-3 top-1/2 transform -translate-y-1/2 flex items-center gap-1' },
+                            React.createElement('button', {
+                                type: 'button',
+                                onClick: togglePasswordVisibility,
+                                className: 'p-1.5 text-gray-400 hover:text-violet-500 transition-colors',
+                                'aria-label': showPassword ? t(currentLang, 'hidePassword') : t(currentLang, 'showPassword')
+                            },
+                                showPassword
+                                    ? React.createElement(Icons.EyeOff, { className: 'w-5 h-5' })
+                                    : React.createElement(Icons.Eye, { className: 'w-5 h-5' })
+                            )
+                        )
+                    )
+                ),
+                // Remember Password & Auto Login
+                React.createElement('div', { className: 'mb-6 space-y-3' },
+                    React.createElement('label', { className: 'flex items-center gap-3 cursor-pointer group' },
+                        React.createElement('input', {
+                            type: 'checkbox',
+                            checked: remember,
+                            onChange: (e) => setRemember(e.target.checked),
+                            className: 'w-5 h-5 rounded border-2 border-gray-300 dark:border-slate-600 text-violet-600 focus:ring-violet-500 focus:ring-offset-0 cursor-pointer transition-all'
+                        }),
+                        React.createElement('span', { className: 'text-sm text-gray-700 dark:text-gray-300 group-hover:text-violet-600 dark:group-hover:text-violet-400 transition-colors' }, t(currentLang, 'rememberPassword'))
+                    ),
+                    React.createElement('label', { className: 'flex items-center gap-3 cursor-pointer group' },
+                        React.createElement('input', {
+                            type: 'checkbox',
+                            checked: autoLoginState,
+                            onChange: (e) => setAutoLoginState(e.target.checked),
+                            className: 'w-5 h-5 rounded border-2 border-gray-300 dark:border-slate-600 text-violet-600 focus:ring-violet-500 focus:ring-offset-0 cursor-pointer transition-all'
+                        }),
+                        React.createElement('span', { className: 'text-sm text-gray-700 dark:text-gray-300 group-hover:text-violet-600 dark:group-hover:text-violet-400 transition-colors' }, t(currentLang, 'autoLogin'))
+                    )
+                ),
+                error && React.createElement('div', {
+                    className: 'mb-6 p-4 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-xl text-red-600 dark:text-red-400 text-sm font-medium animate-slide-up'
+                }, error),
+                React.createElement('button', {
+                    type: 'submit',
+                    disabled: isLoading || !password,
+                    className: 'w-full py-4 px-6 bg-gradient-to-r from-violet-600 to-indigo-600 hover:from-violet-700 hover:to-indigo-700 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02] disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none flex items-center justify-center gap-3'
+                },
+                    isLoading
+                        ? React.createElement('div', { className: 'w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin' })
+                        : React.createElement(Icons.Lock, { className: 'w-5 h-5' }),
+                    isLoading
+                        ? (currentLang === 'ar' ? 'جاري التحقق...' : 'Verifying...')
+                        : t(currentLang, 'loginButton')
+                )
+            ),
+            // Footer
+            React.createElement('div', {
+                className: 'mt-8 text-center text-sm text-gray-500 dark:text-gray-400'
+            },
+                React.createElement('p', {}, '🔒 ', currentLang === 'ar' ? 'آمن ومحمي' : 'Secure & Protected')
+            )
+        )
+    );
+}
+
+// Password Change Modal Component
+function PasswordChangeModal({ isOpen, onClose, currentLang, t, currentPassword, onChange }) {
+    const [passwordData, setPasswordData] = React.useState({
+        currentPassword: '',
+        newPassword: '',
+        confirmPassword: ''
+    });
+    const [error, setError] = React.useState('');
+
+    React.useEffect(() => {
+        if (isOpen) {
+            setPasswordData({ currentPassword: '', newPassword: '', confirmPassword: '' });
+            setError('');
+        }
+    }, [isOpen]);
+
+    const handleSubmit = () => {
+        if (!passwordData.currentPassword || !passwordData.newPassword || !passwordData.confirmPassword) {
+            setError(t(currentLang, 'passwordRequired'));
+            return;
+        }
+
+        if (passwordData.newPassword !== passwordData.confirmPassword) {
+            setError(t(currentLang, 'passwordMismatch'));
+            return;
+        }
+
+        const correctPassword = currentPassword || 'anon';
+        if (passwordData.currentPassword !== correctPassword) {
+            setError(currentLang === 'ar' ? 'كلمة المرور الحالية غير صحيحة' : 'Current password is incorrect');
+            return;
+        }
+
+        onChange(passwordData.newPassword);
+    };
+
+    if (!isOpen) return null;
+
+    return React.createElement('div', { className: 'modal-overlay active' },
+        React.createElement('div', { className: 'modal-container active' },
+            React.createElement('div', { className: 'modal-form-container' },
+                // Modal Header
+                React.createElement('div', { className: 'modal-header-gradient p-6' },
+                    React.createElement('div', { className: 'flex items-center justify-between' },
+                        React.createElement('div', { className: 'flex items-center gap-3' },
+                            React.createElement('div', {
+                                className: 'w-12 h-12 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center'
+                            },
+                                React.createElement(Icons.Lock, { className: 'w-6 h-6 text-white' })
+                            ),
+                            React.createElement('div', {},
+                                React.createElement('h3', { className: 'text-xl font-bold text-white' }, t(currentLang, 'passwordSettings')),
+                                React.createElement('p', { className: 'text-white/70 text-sm' }, t(currentLang, 'changePassword'))
+                            )
+                        ),
+                        React.createElement('button', {
+                            onClick: onClose,
+                            className: 'w-10 h-10 bg-white/20 hover:bg-white/30 rounded-xl flex items-center justify-center transition-colors'
+                        },
+                            React.createElement('svg', {
+                                xmlns: "http://www.w3.org/2000/svg",
+                                width: "20",
+                                height: "20",
+                                viewBox: "0 0 24 24",
+                                fill: "none",
+                                stroke: "currentColor",
+                                strokeWidth: "2",
+                                strokeLinecap: "round",
+                                strokeLinejoin: "round"
+                            },
+                                React.createElement('line', { x1: "18", y1: "6", x2: "6", y2: "18" }),
+                                React.createElement('line', { x1: "6", y1: "6", x2: "18", y2: "18" })
+                            )
+                        )
+                    )
+                ),
+                // Modal Body
+                React.createElement('div', { className: 'p-6 space-y-5' },
+                    React.createElement('div', { className: 'input-group' },
+                        React.createElement('label', { className: 'input-label' }, t(currentLang, 'currentPassword')),
+                        React.createElement('div', { className: 'relative' },
+                            React.createElement('input', {
+                                type: 'password',
+                                value: passwordData.currentPassword,
+                                onChange: (e) => setPasswordData({...passwordData, currentPassword: e.target.value}),
+                                className: 'professional-input',
+                                placeholder: '••••••••'
+                            }),
+                            React.createElement(Icons.Lock, { className: 'input-icon text-gray-400' })
+                        )
+                    ),
+                    React.createElement('div', { className: 'input-group' },
+                        React.createElement('label', { className: 'input-label' }, t(currentLang, 'newPassword')),
+                        React.createElement('div', { className: 'relative' },
+                            React.createElement('input', {
+                                type: 'password',
+                                value: passwordData.newPassword,
+                                onChange: (e) => setPasswordData({...passwordData, newPassword: e.target.value}),
+                                className: 'professional-input',
+                                placeholder: '••••••••'
+                            }),
+                            React.createElement(Icons.Lock, { className: 'input-icon text-gray-400' })
+                        )
+                    ),
+                    React.createElement('div', { className: 'input-group' },
+                        React.createElement('label', { className: 'input-label' }, t(currentLang, 'confirmPassword')),
+                        React.createElement('div', { className: 'relative' },
+                            React.createElement('input', {
+                                type: 'password',
+                                value: passwordData.confirmPassword,
+                                onChange: (e) => setPasswordData({...passwordData, confirmPassword: e.target.value}),
+                                className: 'professional-input',
+                                placeholder: '••••••••'
+                            }),
+                            React.createElement(Icons.Lock, { className: 'input-icon text-gray-400' })
+                        )
+                    ),
+                    error && React.createElement('div', {
+                        className: 'p-4 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-xl text-red-600 dark:text-red-400 text-sm font-medium flex items-center gap-2'
+                    },
+                        React.createElement(Icons.Trash, { className: 'w-4 h-4' }),
+                        error
+                    )
+                ),
+                // Modal Footer
+                React.createElement('div', { className: 'p-6 border-t border-gray-200 dark:border-slate-700' },
+                    React.createElement('div', { className: 'form-actions' },
+                        React.createElement('button', {
+                            onClick: onClose,
+                            className: 'btn-cancel'
+                        }, t(currentLang, 'cancel')),
+                        React.createElement('button', {
+                            onClick: handleSubmit,
+                            className: 'btn-save'
+                        }, t(currentLang, 'changePassword'))
+                    )
+                )
+            )
+        )
+    );
+}
+
+// Splash Screen Component
+function SplashScreen({ onComplete, currentLang, t }) {
+    const [progress, setProgress] = React.useState(0);
+
+    React.useEffect(() => {
+        const interval = setInterval(() => {
+            setProgress(prev => {
+                if (prev >= 100) {
+                    clearInterval(interval);
+                    setTimeout(onComplete, 300);
+                    return 100;
+                }
+                return prev + 2;
+            });
+        }, 30);
+
+        return () => clearInterval(interval);
+    }, [onComplete]);
+
+    return React.createElement('div', {
+        className: 'min-h-screen bg-gradient-to-br from-violet-600 via-purple-600 to-indigo-700 flex items-center justify-center p-4'
+    },
+        React.createElement('div', { className: 'absolute inset-0 overflow-hidden' },
+            React.createElement('div', {
+                className: 'absolute -top-40 -right-40 w-80 h-80 bg-purple-500 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-float'
+            }),
+            React.createElement('div', {
+                className: 'absolute -bottom-40 -left-40 w-80 h-80 bg-indigo-500 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-float',
+                style: { animationDelay: '1s' }
+            })
+        ),
+        React.createElement('div', {
+            className: 'relative text-center animate-scale-in'
+        },
+            React.createElement('div', {
+                className: 'w-24 h-24 mx-auto mb-6 bg-white/20 backdrop-blur-xl rounded-3xl flex items-center justify-center shadow-2xl animate-float'
+            },
+                React.createElement(Icons.Wallet, { className: 'w-12 h-12 text-white' })
+            ),
+            React.createElement('h1', {
+                className: 'text-4xl md:text-5xl font-bold text-white mb-3'
+            }, t(currentLang, 'splashTitle')),
+            React.createElement('p', {
+                className: 'text-xl text-white/80 mb-12'
+            }, t(currentLang, 'splashSubtitle')),
+            // Progress bar
+            React.createElement('div', { className: 'w-64 mx-auto' },
+                React.createElement('div', {
+                    className: 'h-2 bg-white/20 rounded-full overflow-hidden'
+                },
+                    React.createElement('div', {
+                        className: 'h-full bg-white rounded-full transition-all duration-300 ease-out',
+                        style: { width: `${progress}%` }
+                    })
+                ),
+                React.createElement('p', {
+                    className: 'mt-4 text-white/60 text-sm font-medium'
+                }, `${progress}%`)
+            )
+        )
+    );
+}
+
 // DateTime Display Component
 function DateTimeDisplay({ currentLang }) {
     const [dateTime, setDateTime] = React.useState(new Date());
@@ -902,21 +1317,69 @@ function App() {
         currency: 'EUR',
         language: 'ar',
         commissionRate: 0,
-        darkMode: true
+        darkMode: true,
+        password: 'anon',
+        rememberPassword: false,
+        autoLogin: false
     });
-    
+
     const [income, setIncome] = useState([]);
     const [expenses, setExpenses] = useState([]);
     const [tasks, setTasks] = useState([]);
     const [debts, setDebts] = useState([]);
     const [dbReady, setDbReady] = useState(false);
 
+    // Authentication states
+    const [isAuthenticated, setIsAuthenticated] = useState(false);
+    const [showSplash, setShowSplash] = useState(false);
+
+    const handleLogin = async () => {
+        // Save settings immediately to IndexedDB for auto-login to work
+        await dbOperations.saveSettings(settings);
+        setShowSplash(true);
+    };
+
+    const handleSplashComplete = () => {
+        setShowSplash(false);
+        setIsAuthenticated(true);
+    };
+
+    const handleLogout = () => {
+        if (confirm(t(settings.language, 'logoutConfirm'))) {
+            setIsAuthenticated(false);
+        }
+    };
+
+    const handleRememberChange = (value) => {
+        const newSettings = {...settings, rememberPassword: value};
+        setSettings(newSettings);
+        // Also save to localStorage as backup
+        localStorage.setItem('rememberPassword', value);
+    };
+
+    const handleAutoLoginChange = (value) => {
+        const newSettings = {...settings, autoLogin: value};
+        setSettings(newSettings);
+        // Also save to localStorage as backup
+        localStorage.setItem('autoLogin', value);
+    };
+
     // Load data from IndexedDB on mount
     useEffect(() => {
         const loadData = async () => {
+            // Check localStorage for auto-login immediately
+            const autoLoginFromStorage = localStorage.getItem('autoLogin') === 'true';
+            const rememberFromStorage = localStorage.getItem('rememberPassword') === 'true';
+            const rememberedPassword = localStorage.getItem('rememberedPassword');
+
+            if (autoLoginFromStorage && rememberFromStorage && rememberedPassword) {
+                // Auto-login from localStorage
+                setShowSplash(true);
+            }
+
             // First try to migrate old localStorage data
             await migrateFromLocalStorage();
-            
+
             // Then load from IndexedDB
             const [savedIncome, savedExpenses, savedTasks, savedDebts, savedSettings] = await Promise.all([
                 dbOperations.getAll('income'),
@@ -925,16 +1388,23 @@ function App() {
                 dbOperations.getAll('debts'),
                 dbOperations.getSettings()
             ]);
-            
+
             if (savedIncome.length) setIncome(savedIncome);
             if (savedExpenses.length) setExpenses(savedExpenses);
             if (savedTasks.length) setTasks(savedTasks);
             if (savedDebts.length) setDebts(savedDebts);
-            if (savedSettings) setSettings(prev => ({ ...prev, ...savedSettings }));
-            
+            if (savedSettings) {
+                setSettings(prev => ({ ...prev, ...savedSettings }));
+
+                // Check for auto login from IndexedDB (if not already triggered from localStorage)
+                if (!showSplash && savedSettings.autoLogin && savedSettings.rememberPassword && savedSettings.password) {
+                    setShowSplash(true);
+                }
+            }
+
             setDbReady(true);
         };
-        
+
         loadData();
     }, []);
 
@@ -1010,6 +1480,27 @@ function App() {
         }
     };
 
+    // Show Login screen if not authenticated
+    if (!isAuthenticated) {
+        if (showSplash) {
+            return React.createElement(SplashScreen, { 
+                onComplete: handleSplashComplete, 
+                currentLang: settings.language, 
+                t 
+            });
+        }
+        return React.createElement(Login, {
+            onLogin: handleLogin,
+            currentLang: settings.language,
+            t,
+            storedPassword: settings.password,
+            onRememberChange: handleRememberChange,
+            onAutoLoginChange: handleAutoLoginChange,
+            rememberPassword: settings.rememberPassword,
+            autoLogin: settings.autoLogin
+        });
+    }
+
     return React.createElement('div', { 
         className: `flex h-screen bg-gray-50 dark:bg-slate-900 transition-colors duration-300 ${currentLang === 'ar' ? 'font-cairo' : 'font-sans'}` 
     },
@@ -1059,8 +1550,19 @@ function App() {
                                currentPage === 'settings' ? 'settingsTitle' : 'dashboardTitle')
                         )
                     ),
-                    // DateTime Display
-                    React.createElement(DateTimeDisplay, { currentLang })
+                    React.createElement('div', { className: 'flex items-center gap-3' },
+                        // Logout button
+                        React.createElement('button', {
+                            onClick: handleLogout,
+                            className: 'flex items-center gap-2 px-4 py-2 bg-red-50 dark:bg-red-900/20 hover:bg-red-100 dark:hover:bg-red-900/30 text-red-600 dark:text-red-400 rounded-xl transition-all duration-300 font-medium',
+                            'aria-label': t(currentLang, 'logoutButton')
+                        },
+                            React.createElement(Icons.LogOut, { className: 'w-4 h-4' }),
+                            React.createElement('span', { className: 'hidden sm:inline' }, t(currentLang, 'logoutButton'))
+                        ),
+                        // DateTime Display
+                        React.createElement(DateTimeDisplay, { currentLang })
+                    )
                 )
             ),
             // Page content
@@ -2684,13 +3186,22 @@ function SettingsPage({ settings, setSettings, currentLang, t, dbOperations }) {
     const fileInputRef = React.useRef(null);
     const { showToast } = React.useContext(ToastContext);
 
+    // Password modal state
+    const [showPasswordModal, setShowPasswordModal] = useState(false);
+
     const handleSave = () => {
         setSettings(formData);
         showToast(t(currentLang, 'settingsSaved'), 'success');
     };
-    
+
     const setDarkMode = (value) => {
         setFormData({...formData, darkMode: value});
+    };
+
+    const handlePasswordChange = (newPassword) => {
+        setFormData({...formData, password: newPassword});
+        setShowPasswordModal(false);
+        showToast(t(currentLang, 'passwordChanged'), 'success');
     };
 
     const currencies = [
@@ -2746,6 +3257,13 @@ function SettingsPage({ settings, setSettings, currentLang, t, dbOperations }) {
             description: t(currentLang, 'commissionHelp'),
             icon: '📊',
             color: 'from-orange-500 to-amber-500'
+        },
+        {
+            id: 'password',
+            title: t(currentLang, 'passwordSettings'),
+            description: currentLang === 'ar' ? 'تغيير كلمة المرور' : 'Change your password',
+            icon: '🔒',
+            color: 'from-violet-500 to-purple-500'
         },
         {
             id: 'data',
@@ -2869,15 +3387,35 @@ function SettingsPage({ settings, setSettings, currentLang, t, dbOperations }) {
                 )
             ),
 
-            // Data Management Card - Full Width
-            React.createElement('div', { className: 'bg-white dark:bg-slate-800 rounded-3xl p-6 shadow-lg border border-gray-100 dark:border-slate-700 hover:shadow-xl transition-all duration-300 md:col-span-2' },
-                React.createElement('div', { className: 'flex items-center gap-4 mb-6' },
-                    React.createElement('div', { className: 'w-14 h-14 rounded-2xl bg-gradient-to-br from-red-500 to-rose-500 flex items-center justify-center text-2xl shadow-lg' },
+            // Password Card
+            React.createElement('div', { className: 'bg-white dark:bg-slate-800 rounded-3xl p-6 shadow-lg border border-gray-100 dark:border-slate-700 hover:shadow-xl transition-all duration-300' },
+                React.createElement('div', { className: 'flex items-center gap-4 mb-4' },
+                    React.createElement('div', { className: 'w-14 h-14 rounded-2xl bg-gradient-to-br from-violet-500 to-purple-500 flex items-center justify-center text-2xl shadow-lg' },
                         settingCards[4].icon
                     ),
                     React.createElement('div', {},
                         React.createElement('h3', { className: 'text-xl font-bold text-gray-800 dark:text-white' }, settingCards[4].title),
                         React.createElement('p', { className: 'text-sm text-gray-500 dark:text-gray-400' }, settingCards[4].description)
+                    )
+                ),
+                React.createElement('button', {
+                    onClick: () => setShowPasswordModal(true),
+                    className: 'w-full px-6 py-4 rounded-2xl bg-gradient-to-r from-violet-500 to-purple-500 hover:from-violet-600 hover:to-purple-600 text-white font-semibold transition-all shadow-lg flex items-center justify-center gap-2'
+                },
+                    React.createElement(Icons.Lock, { className: 'w-5 h-5' }),
+                    t(currentLang, 'changePassword')
+                )
+            ),
+
+            // Data Management Card - Full Width
+            React.createElement('div', { className: 'bg-white dark:bg-slate-800 rounded-3xl p-6 shadow-lg border border-gray-100 dark:border-slate-700 hover:shadow-xl transition-all duration-300 md:col-span-2' },
+                React.createElement('div', { className: 'flex items-center gap-4 mb-6' },
+                    React.createElement('div', { className: 'w-14 h-14 rounded-2xl bg-gradient-to-br from-red-500 to-rose-500 flex items-center justify-center text-2xl shadow-lg' },
+                        settingCards[5].icon
+                    ),
+                    React.createElement('div', {},
+                        React.createElement('h3', { className: 'text-xl font-bold text-gray-800 dark:text-white' }, settingCards[5].title),
+                        React.createElement('p', { className: 'text-sm text-gray-500 dark:text-gray-400' }, settingCards[5].description)
                     )
                 ),
                 React.createElement('div', { className: 'flex flex-wrap gap-4' },
@@ -2980,7 +3518,16 @@ function SettingsPage({ settings, setSettings, currentLang, t, dbOperations }) {
                 React.createElement(Icons.Check, { className: 'w-6 h-6' }),
                 t(currentLang, 'saveSettings')
             )
-        )
+        ),
+        // Password Change Modal
+        React.createElement(PasswordChangeModal, {
+            isOpen: showPasswordModal,
+            onClose: () => setShowPasswordModal(false),
+            currentLang: currentLang,
+            t: t,
+            currentPassword: formData.password,
+            onChange: handlePasswordChange
+        })
     );
 }
 
