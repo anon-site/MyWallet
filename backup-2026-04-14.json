@@ -103,6 +103,16 @@
       "cancelledOrders": "",
       "date": "2026-04-13",
       "id": 1776040449911
+    },
+    {
+      "amount": "23.18",
+      "source": "Efood",
+      "description": "توقف العمل بسبب حادث الساعة 4 ونص",
+      "hours": "4.8",
+      "orders": "0",
+      "cancelledOrders": "",
+      "date": "2026-04-14",
+      "id": 1776198260409
     }
   ],
   "expenses": [],
@@ -132,6 +142,9 @@
     "language": "ar",
     "commissionRate": 30,
     "darkMode": true,
+    "password": "anon",
+    "rememberPassword": false,
+    "autoLogin": true,
     "id": "main",
     "telegramBotToken": "AAFoysq9MeChgp0IW9nCmb2kt8s_r2x4dnA",
     "telegramChatId": "8588790207"
