@@ -113,6 +113,16 @@
       "cancelledOrders": "",
       "date": "2026-04-14",
       "id": 1776198260409
+    },
+    {
+      "amount": "48.13",
+      "source": "efood",
+      "description": "تم ايقاف العمل بسبب عطل في بطارية الدراجة",
+      "hours": "5.33",
+      "orders": "16",
+      "cancelledOrders": "",
+      "date": "2026-04-15",
+      "id": 1776286858114
     }
   ],
   "expenses": [],
