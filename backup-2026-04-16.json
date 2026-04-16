@@ -123,6 +123,16 @@
       "cancelledOrders": "",
       "date": "2026-04-15",
       "id": 1776286858114
+    },
+    {
+      "amount": "45.32",
+      "source": "Efood",
+      "description": "",
+      "hours": "5.15",
+      "orders": "18",
+      "cancelledOrders": "",
+      "date": "2026-04-16",
+      "id": 1776374126607
     }
   ],
   "expenses": [],
@@ -139,7 +149,7 @@
     },
     {
       "personName": "Efoof",
-      "amount": "66",
+      "amount": "8.84",
       "type": "owed",
       "description": "",
       "date": "2026-04-12",
